@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1334400fs"></ZoomStartTime>
+      <ZoomEndTime time="1701201fs"></ZoomEndTime>
+      <Cursor1Time time="1390000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="194"></NameColumnWidth>
+      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/tb_top/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/c8051/data_path/pc/addr">
+      <obj_property name="ElementShortName">addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/c8051/data_path/ir/IR">
+      <obj_property name="ElementShortName">IR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/c8051/data_path/acc/ACC">
+      <obj_property name="ElementShortName">ACC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ACC[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/c8051/data_path/psw/PSW">
+      <obj_property name="ElementShortName">PSW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PSW[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/c8051/isr_ctrl/EI0_i">
+      <obj_property name="ElementShortName">EI0_i</obj_property>
+      <obj_property name="ObjectShortName">EI0_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/c8051/isr_ctrl/ISR_req">
+      <obj_property name="ElementShortName">ISR_req</obj_property>
+      <obj_property name="ObjectShortName">ISR_req</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/c8051/ram/stack_push_pc">
+      <obj_property name="ElementShortName">stack_push_pc</obj_property>
+      <obj_property name="ObjectShortName">stack_push_pc</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/c8051/ram/stack_pop_pc">
+      <obj_property name="ElementShortName">stack_pop_pc</obj_property>
+      <obj_property name="ObjectShortName">stack_pop_pc</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/c8051/ram/mem[8]">
+      <obj_property name="ElementShortName">[8][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/c8051/ram/mem[7]">
+      <obj_property name="ElementShortName">[7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+   </wvobject>
+</wave_config>

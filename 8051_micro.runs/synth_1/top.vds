@@ -1,0 +1,842 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb  7 22:40:11 2023
+# Process ID: 107128
+# Current directory: /home/fabiooliveira/Downloads/8051_micro/8051_micro.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/fabiooliveira/Downloads/8051_micro/8051_micro.runs/synth_1/top.vds
+# Journal file: /home/fabiooliveira/Downloads/8051_micro/8051_micro.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 107238 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1964.363 ; gain = 202.719 ; free physical = 748 ; free virtual = 1820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/control_unit.v:23]
+	Parameter s_start bound to: 5'b00000 
+	Parameter s_fetch_1 bound to: 5'b00001 
+	Parameter s_fetch_2 bound to: 5'b00010 
+	Parameter s_decode bound to: 5'b00011 
+	Parameter s_mov_ri bound to: 5'b00100 
+	Parameter s_mov_ai bound to: 5'b00101 
+	Parameter s_mov_ar bound to: 5'b00110 
+	Parameter s_add_ai bound to: 5'b00111 
+	Parameter s_mov_ra bound to: 5'b01000 
+	Parameter s_subb_ai bound to: 5'b01001 
+	Parameter s_orl_ai bound to: 5'b01011 
+	Parameter s_anl_ai bound to: 5'b01101 
+	Parameter s_xrl_ai bound to: 5'b01111 
+	Parameter s_jnz bound to: 5'b10001 
+	Parameter s_jz bound to: 5'b10010 
+	Parameter s_sjmp bound to: 5'b10011 
+	Parameter s_jnc bound to: 5'b10100 
+	Parameter s_mov_ad bound to: 5'b10101 
+	Parameter s_mov_dr bound to: 5'b10110 
+	Parameter s_reti bound to: 5'b10111 
+	Parameter s_mov_da bound to: 5'b11000 
+	Parameter s_halt bound to: 5'b11111 
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (1#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (2#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_register' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/instruction_register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_register' (3#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/instruction_register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'arithmetic_logic_unit' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/arithmetic_logic_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'arithmetic_logic_unit' (4#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/arithmetic_logic_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'acc' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/acc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'acc' (5#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/acc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'psw' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/psw.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'psw' (6#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/psw.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (7#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register_bank' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/register_bank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_bank' (8#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/register_bank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (9#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:21]
+INFO: [Synth 8-4471] merging register 'ROM_reg[9][7:0]' into 'ROM_reg[5][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[12][7:0]' into 'ROM_reg[0][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[14][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[16][7:0]' into 'ROM_reg[10][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[17][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[18][7:0]' into 'ROM_reg[10][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[19][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[21][7:0]' into 'ROM_reg[3][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[22][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[24][7:0]' into 'ROM_reg[20][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[25][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[26][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[28][7:0]' into 'ROM_reg[20][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[29][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[30][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[33][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[35][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[36][7:0]' into 'ROM_reg[20][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[38][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[39][7:0]' into 'ROM_reg[5][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[40][7:0]' into 'ROM_reg[20][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[42][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[45][7:0]' into 'ROM_reg[43][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[46][7:0]' into 'ROM_reg[44][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[47][7:0]' into 'ROM_reg[43][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[49][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[50][7:0]' into 'ROM_reg[2][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[51][7:0]' into 'ROM_reg[3][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[53][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[55][7:0]' into 'ROM_reg[1][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[57][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[58][7:0]' into 'ROM_reg[2][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[59][7:0]' into 'ROM_reg[3][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[61][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[64][7:0]' into 'ROM_reg[54][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[66][7:0]' into 'ROM_reg[34][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[67][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[68][7:0]' into 'ROM_reg[4][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[69][7:0]' into 'ROM_reg[15][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[70][7:0]' into 'ROM_reg[2][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[71][7:0]' into 'ROM_reg[3][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[72][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[73][7:0]' into 'ROM_reg[15][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[74][7:0]' into 'ROM_reg[10][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[75][7:0]' into 'ROM_reg[11][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[76][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[77][7:0]' into 'ROM_reg[15][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[78][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[79][7:0]' into 'ROM_reg[15][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[80][7:0]' into 'ROM_reg[8][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+INFO: [Synth 8-4471] merging register 'ROM_reg[81][7:0]' into 'ROM_reg[15][7:0]' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[9] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[12] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[14] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[16] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[17] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[18] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[19] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[21] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[22] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[24] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[25] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[26] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[28] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[29] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[30] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[33] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[35] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[36] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[38] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[39] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[40] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[42] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[45] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[46] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[47] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[49] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[50] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[51] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[53] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[55] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[57] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[58] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[59] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[61] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[64] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[66] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[67] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[68] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[69] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[70] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[71] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[72] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[73] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[74] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[75] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[76] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[77] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[78] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[79] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[80] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-6014] Unused sequential element ROM_reg[81] was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:36]
+WARNING: [Synth 8-3848] Net ROM[82] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[83] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[84] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[85] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[86] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[87] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[88] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[89] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[90] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[91] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[92] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[93] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[94] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[95] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[96] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[97] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[98] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[99] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[100] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[101] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[102] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[103] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[104] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[105] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[106] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[107] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[108] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[109] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[110] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[111] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[112] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[113] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[114] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[115] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[116] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[117] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[118] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[119] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[120] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[121] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[122] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[123] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[124] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[125] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[126] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[127] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[128] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[129] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[130] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[131] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[132] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[133] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[134] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[135] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[136] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[137] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[138] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[139] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[140] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[141] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[142] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[143] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[144] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[145] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[146] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[147] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[148] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[149] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[150] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[151] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[152] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[153] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[154] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[155] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[156] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[157] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[158] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[159] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[160] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[161] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[162] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[163] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[164] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[165] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[166] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[167] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[168] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[169] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[170] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[171] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[172] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[173] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[174] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[175] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[176] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[177] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[178] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[179] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[180] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+WARNING: [Synth 8-3848] Net ROM[181] in module/entity rom does not have driver. [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:28]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'rom' (10#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/rom.v:21]
+INFO: [Synth 8-6157] synthesizing module 'timer0' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/timer0.v:23]
+WARNING: [Synth 8-6014] Unused sequential element TL0_reg was removed.  [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/timer0.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'timer0' (11#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/timer0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'interrupt_controller' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/interrupt_controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'interrupt_controller' (12#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/interrupt_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Button_debounce' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:23]
+WARNING: [Synth 8-6090] variable 'debounce_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:49]
+WARNING: [Synth 8-6090] variable 'button_out' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:62]
+WARNING: [Synth 8-6090] variable 'button_pressed' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:63]
+WARNING: [Synth 8-6090] variable 'debounce_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:64]
+WARNING: [Synth 8-6090] variable 'button_out' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'Button_debounce' (13#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/Button_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port IE_i[6]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port IE_i[5]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port IE_i[4]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port IE_i[3]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port IE_i[2]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[7]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[6]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[4]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[3]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[2]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[1]
+WARNING: [Synth 8-3331] design interrupt_controller has unconnected port TCON_i[0]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tmod[7]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tmod[6]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tmod[5]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tmod[4]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tmod[3]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tmod[2]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[7]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[6]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[5]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[3]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[2]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[1]
+WARNING: [Synth 8-3331] design timer0 has unconnected port tcon[0]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[15]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[14]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[13]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[12]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[11]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[10]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[9]
+WARNING: [Synth 8-3331] design rom has unconnected port rom_addr[8]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[7]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[6]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[5]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[4]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[3]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[2]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[1]
+WARNING: [Synth 8-3331] design arithmetic_logic_unit has unconnected port PSW[0]
+WARNING: [Synth 8-3331] design control_unit has unconnected port PSW[6]
+WARNING: [Synth 8-3331] design control_unit has unconnected port PSW[5]
+WARNING: [Synth 8-3331] design control_unit has unconnected port PSW[4]
+WARNING: [Synth 8-3331] design control_unit has unconnected port PSW[3]
+WARNING: [Synth 8-3331] design control_unit has unconnected port PSW[2]
+WARNING: [Synth 8-3331] design control_unit has unconnected port PSW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2083.113 ; gain = 321.469 ; free physical = 718 ; free virtual = 1794
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2097.957 ; gain = 336.312 ; free physical = 720 ; free virtual = 1796
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2097.957 ; gain = 336.312 ; free physical = 720 ; free virtual = 1796
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2097.957 ; gain = 0.000 ; free physical = 719 ; free virtual = 1795
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2214.715 ; gain = 0.000 ; free physical = 604 ; free virtual = 1693
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2214.715 ; gain = 0.000 ; free physical = 604 ; free virtual = 1693
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2214.715 ; gain = 453.070 ; free physical = 697 ; free virtual = 1787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2214.715 ; gain = 453.070 ; free physical = 697 ; free virtual = 1787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 2214.715 ; gain = 453.070 ; free physical = 697 ; free virtual = 1787
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/arithmetic_logic_unit.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [/home/fabiooliveira/Downloads/8051_micro/8051_micro.srcs/sources_1/new/arithmetic_logic_unit.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 2214.715 ; gain = 453.070 ; free physical = 655 ; free virtual = 1746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |ram__GB0      |           1|     33707|
+|2     |ram__GB1      |           1|      8821|
+|3     |ram__GB2      |           1|     10917|
+|4     |ram__GB3      |           1|     13829|
+|5     |top__GC0      |           1|      5259|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 299   
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 9     
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1056  
+	   3 Input      8 Bit        Muxes := 1     
+	  41 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1809  
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register_bank 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module ram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 257   
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1049  
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1784  
+Module control_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  41 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module program_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module instruction_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module arithmetic_logic_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Muxes : 
+	   9 Input      9 Bit        Muxes := 4     
+Module acc 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module psw 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module datapath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 31    
+Module timer0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module interrupt_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module Button_debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'i_0/isr_ctrl/ISR_v_reg[0]' (FDE) to 'i_0/isr_ctrl/ISR_v_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\isr_ctrl/ISR_v_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[65][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[63][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[62][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[60][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[56][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[54][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[52][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[48][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[44][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[43][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[41][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[37][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[34][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[32][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[31][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[27][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[23][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[20][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[15][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[13][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[11][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[10][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[8][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[7][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[6][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[5][3]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[4][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[3][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[2][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[1][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[0][3]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[65][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[63][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[62][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[60][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[56][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[54][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[52][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[48][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[44][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[43][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[41][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[37][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[34][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[32][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[31][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[27][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[23][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[20][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[15][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[13][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[11][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[10][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[8][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[7][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[6][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[5][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[4][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[3][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[2][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[1][4]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[0][4]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[65][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[63][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[62][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[60][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[56][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[54][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[52][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[48][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[44][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[43][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[41][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[37][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[34][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[32][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[31][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[27][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[23][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[20][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[15][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[13][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[11][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[10][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[8][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[7][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[6][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[5][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[4][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[3][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[2][5]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[1][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[0][5]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[65][6]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[63][6]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[62][6]' (FD) to 'i_0/rom/ROM_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[60][6]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[56][6]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Synth 8-3886] merging instance 'i_0/rom/ROM_reg[54][6]' (FD) to 'i_0/rom/ROM_reg[63][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\rom/ROM_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\rom/ROM_reg[0][2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:39 . Memory (MB): peak = 2286.715 ; gain = 525.070 ; free physical = 596 ; free virtual = 1715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |ram__GB0      |           1|     13844|
+|2     |ram__GB1      |           1|      3130|
+|3     |ram__GB2      |           1|      4383|
+|4     |ram__GB3      |           1|      5140|
+|5     |top__GC0      |           1|      1409|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:46 . Memory (MB): peak = 2286.715 ; gain = 525.070 ; free physical = 492 ; free virtual = 1620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:37 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 394 ; free virtual = 1522
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |top_GT0       |           1|     27906|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:17 ; elapsed = 00:02:46 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:21 ; elapsed = 00:02:50 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:21 ; elapsed = 00:02:50 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:23 ; elapsed = 00:02:51 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:23 ; elapsed = 00:02:52 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:24 ; elapsed = 00:02:53 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:24 ; elapsed = 00:02:53 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    33|
+|3     |LUT1   |    15|
+|4     |LUT2   |   248|
+|5     |LUT3   |   335|
+|6     |LUT4   |   572|
+|7     |LUT5   |  1718|
+|8     |LUT6   |  5399|
+|9     |MUXF7  |   828|
+|10    |MUXF8  |   408|
+|11    |FDRE   |  2242|
+|12    |LD     |     9|
+|13    |IBUF   |     3|
+|14    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+----------------------+------+
+|      |Instance    |Module                |Cells |
++------+------------+----------------------+------+
+|1     |top         |                      | 11819|
+|2     |  EISR      |Button_debounce       |   125|
+|3     |  TIMER0    |timer0                |    55|
+|4     |  ctrl_unit |control_unit          |   198|
+|5     |  data_path |datapath              |  5400|
+|6     |    acc     |acc                   |     8|
+|7     |    alu     |arithmetic_logic_unit |    19|
+|8     |    ir      |instruction_register  |  3431|
+|9     |    pc      |program_counter       |  1940|
+|10    |    psw     |psw                   |     2|
+|11    |  isr_ctrl  |interrupt_controller  |    14|
+|12    |  ram       |ram                   |  6015|
+|13    |    REG     |register_bank         |   139|
++------+------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:24 ; elapsed = 00:02:53 . Memory (MB): peak = 2452.848 ; gain = 691.203 ; free physical = 403 ; free virtual = 1533
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:21 ; elapsed = 00:02:49 . Memory (MB): peak = 2452.848 ; gain = 574.445 ; free physical = 448 ; free virtual = 1577
+Synthesis Optimization Complete : Time (s): cpu = 00:02:24 ; elapsed = 00:02:53 . Memory (MB): peak = 2452.855 ; gain = 691.203 ; free physical = 448 ; free virtual = 1577
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2452.855 ; gain = 0.000 ; free physical = 518 ; free virtual = 1647
+INFO: [Netlist 29-17] Analyzing 1278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2452.855 ; gain = 0.000 ; free physical = 489 ; free virtual = 1619
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+197 Infos, 205 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:03:05 . Memory (MB): peak = 2452.855 ; gain = 941.422 ; free physical = 604 ; free virtual = 1733
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2452.855 ; gain = 0.000 ; free physical = 604 ; free virtual = 1733
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/fabiooliveira/Downloads/8051_micro/8051_micro.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  7 22:43:36 2023...

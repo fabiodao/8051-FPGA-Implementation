@@ -1,0 +1,350 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Tue Feb  7 22:44:54 2023
+| Host         : parallels-Parallels-Virtual-Platform running 64-bit Ubuntu 22.04.1 LTS
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   272 |
+|    Minimum number of control sets                        |   272 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   272 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |   265 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              91 |           41 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               5 |            5 |
+| Yes          | No                    | No                     |            2055 |         1179 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             108 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------+---------------------------+------------------+----------------+
+|          Clock Signal         |           Enable Signal          |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------------+---------------------------+------------------+----------------+
+|  data_path/ir/IR_reg[13]_1[1] |                                  |                           |                1 |              1 |
+|  clock_IBUF_BUFG              |                                  | reset_IBUF                |                5 |              5 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_41[0]     |                           |                5 |              7 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_15[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_8[0]      |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_18[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_19[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_2[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_17[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_20[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_22[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_21[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_40[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_45[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_38[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_46[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_47[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_7[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_20[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_56[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_22[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_25[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_27[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_26[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_52[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_54[0]     |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_55[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_28[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_16[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_58[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_57[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_60[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_61[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_62[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_59[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_12[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_21[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_13[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_14[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_12[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_15[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_16[0]     |                           |                8 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_19[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_20[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_17[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_11[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_3[0]      |                           |                2 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_36[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_37[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_35[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_5[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_6[0]      |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_9[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_28[0]     |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_1[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_10[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_12[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_13[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_11[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_15[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_16[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_27[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[3]_5[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_17[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_29[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_30[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_6[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_8[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[4]_4[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_1[0]      |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[147][7]_i_1_n_0          |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[209][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[205][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[201][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[19][7]_i_1_n_0           |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[197][7]_i_1_n_0          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[194][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[178][7]_i_1_n_0          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[157][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[231][7]_i_1_n_0          |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[146][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[145][7]_i_1_n_0          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[128][7]_i_1_n_0          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[107][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/E[0]                |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_14[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_16[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[42][7]_i_1_n_0           |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[99][7]_i_1_n_0           |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[91][7]_i_1_n_0           |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[8][7]_i_1_n_0            |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[89][7]_i_1_n_0           |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[76][7]_i_1_n_0           |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[6][7]_i_1_n_0            |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[67][7]_i_1_n_0           |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[53][7]_i_1_n_0           |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_17[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[39][7]_i_1_n_0           |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[32][7]_i_1_n_0           |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[2][7]_i_1_n_0            |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[248][7]_i_1_n_0          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[242][7]_i_1_n_0          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[237][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ram/mem[233][7]_i_1_n_0          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_37[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_26[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_29[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_3[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_30[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_28[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_32[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_35[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_34[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_27[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_5[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_7[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_14[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_2[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_15[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_21[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[5]_7[0]      |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[2]_23[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_24[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_13[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_17[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_16[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_14[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_10[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_11[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[1]_1[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_50[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_9[0]      |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_30[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_25[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_18[0]     |                           |                2 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_24[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[0]_26[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2][0]        |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_26[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_34[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_39[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_40[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_33[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_46[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2]_0[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2]_1[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_3[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2]_2[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2]_3[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2]_6[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[3]_rep[0]    |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[2]_4[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[3]_rep_0[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[3]_rep_3[0]  |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[3]_rep_1[0]  |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_27[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_25[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_2[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_24[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_23[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_22[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_21[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[0]_7[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[1]_12[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[0]_8[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[0]_5[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_7[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_9[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_10[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_5[0]      |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_15[0]  |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_2[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_1[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_0[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[1]_42[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_5[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/E[0]                   |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_0[0]          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_12[0]  |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_9[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_16[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[1]_175[0] |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_17[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset[0]            |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_8[0]   |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_3[0]   |                           |                5 |              8 |
+|  data_path/ir/IR_reg[13]_1[0] |                                  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_8[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[3]_1[0]      | reset_IBUF                |                2 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[3]_1[1]      | reset_IBUF                |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_17[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[7]_rep_24[0] |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[6]_2[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[7]_rep_21[0] |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[6]_4[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[6]_3[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[5]_0[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[5]_1[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[4]_rep__0[0] |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[3]_rep__0[0] |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[4]_0[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[4][0]        |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[3]_rep__2[0] |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_18[0]         |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_9[0]          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_8[0]          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_7[0]          |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_6[0]          |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_5[0]          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_4[0]          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_3[0]          |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_19[0]         |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_10[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_17[0]         |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_16[0]         |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_15[0]         |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_14[0]         |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_13[0]         |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_21[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_11[0]         |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_12[0]         |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_101[0] | reset_IBUF                |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_102[0] | reset_IBUF                |                2 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_103[0] | reset_IBUF                |                2 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_104[0] | reset_IBUF                |                1 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_105[0] | reset_IBUF                |                1 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_106[0] | reset_IBUF                |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_107[0] | reset_IBUF                |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_108[0] | reset_IBUF                |                2 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_11[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_3[0]      |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[2]_4[0]      |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_14[0]  |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/SP_reg[5][0]           |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_16[0]     |                           |                2 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_14[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_13[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_30[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_10[0]         |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_29[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_12[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_11[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_14[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_16[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_17[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_31[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_18[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_20[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_19[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_23[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_24[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_25[0]     |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[7]_26[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_13[0]  |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/reset_1[0]          |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[7]_rep_4[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[7]_rep_3[0]  |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[7]_rep_25[0] |                           |                3 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_93[0]  |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_9[0]   |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_89[0]  |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_3[0]      |                           |                7 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/state_reg[0]_86[0]  |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/SP_reg[7]_rep_22[0] |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_24[0]     |                           |                4 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_25[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_28[0]     |                           |                6 |              8 |
+|  clock_IBUF_BUFG              | data_path/ir/IR_reg[6]_26[0]     |                           |                5 |              8 |
+|  clock_IBUF_BUFG              | ctrl_unit/state_reg[0]_2         | ctrl_unit/state_reg[1]_65 |                3 |             10 |
+|  clock_IBUF_BUFG              | ram/mem[144][7]_i_1_n_0          |                           |                5 |             16 |
+|  clock_IBUF_BUFG              | ctrl_unit/PSW_reg[1][0]          | reset_IBUF                |                5 |             18 |
+|  clock_IBUF_BUFG              |                                  |                           |               36 |             82 |
++-------------------------------+----------------------------------+---------------------------+------------------+----------------+
+
+
